@@ -1,0 +1,21 @@
+Major component of hadoop are 
+1.HDFS:
+Hadoop distributed file systemis a master-slave architecure based system which is used to suppot big data applications.
+comparatively it is a low cost system.
+In hadoop system every macchine has a data node and a task tracker.
+
+Data node contains all the information required to perform operations by task tracker.
+master-slave architecure has a name node and a data node .
+name node: it stores the meta data.Name Node is placed in Master Node. It used to store Meta Data about Data Nodes like 
+“How many blocks are stored in Data Nodes, Which Data Nodes have data, Slave Node Details, Data Nodes locations, timestamps etc” .
+data node: it regulates the storage of the data.Data Nodes are places in Slave Nodes. It is used to store our Application Actual Data.
+It stores data in Data Slots of size 64MB by default.
+Map reduce: it has two parts
+1.job racker 
+2.task tracker
+job tracker assigns the task.
+task tracker executes the task assigned by job tracker.
+job tracker take cares the assigned tasks and also it recieves the results for the assigned task.
+task tracker has two tasks 
+1. Map Task
+2. Reduce Task
